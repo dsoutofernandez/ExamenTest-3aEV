@@ -97,9 +97,9 @@ public class CalculoTest {
         int result = instance.getNumero1();
         assertEquals(expResult, result);
         
-        int expectedResult=0;
         
-        assertEquals(expectedResult,instance.getNumero1(),0.0);
+        
+        assertEquals(expResult,instance.getNumero1(),0.0);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -113,9 +113,9 @@ public class CalculoTest {
         Calculo instance = new Calculo();
         int expResult = 0;
         int result = instance.getNumero2();
-        assertEquals(expResult, result);
+        assertEquals(expResult, result,0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -124,14 +124,15 @@ public class CalculoTest {
     @Test
     public void testObtenerMCD() {
         System.out.println("obtenerMCD");
-        int num1 = 0;
-        int num2 = 0;
+        int num1 = 2;
+        int num2 = 2;
         Calculo instance = new Calculo();
-        int expResult = 0;
+        int expResult = 2;
         int result = instance.obtenerMCD(num1, num2);
-        assertEquals(expResult, result);
+        
+        assertEquals(expResult, result,0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
