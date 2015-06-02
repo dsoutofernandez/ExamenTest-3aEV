@@ -75,7 +75,7 @@ public class CalculoTest {
     /**
      * Test of getMensajeResultado method, of class Calculo.
      */
-    @Test
+    /*@Test
     public void testGetMensajeResultado() {
         System.out.println("Cálculo correcto");
         Calculo instance = new Calculo();
@@ -83,6 +83,32 @@ public class CalculoTest {
         String result = instance.getMensajeResultado();
         
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testMensajeNumero2() {
+        //System.out.println("error");
+        Calculo instance = new Calculo();
+        String expResult = "Error";
+        String result = instance.getMensajeResultado();
+        instance.setNumero2(-3);
+        
+        assertEquals(expResult, instance.getMensajeResultado());
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testMensajeNumero1() {
+        //System.out.println("Cálculo correcto");
+        Calculo instance = new Calculo();
+        String expResult = "Error";
+        String result = instance.getMensajeResultado();
+        instance.setNumero1(-2);
+        
+        assertEquals(expResult, instance.getMensajeResultado());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }

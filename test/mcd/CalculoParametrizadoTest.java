@@ -57,4 +57,51 @@ public class CalculoParametrizadoTest {
       System.out.println("Parameterized Number is : " +result);
       assertEquals(result,mod.obtenerMCD(mod.getNumero1(),mod.getNumero2()),0.1);
    }
+   
+   
+   @Test
+   public void testMensajeCorrecto(){
+   
+       
+        System.out.println("Numeros correctamente introduzidos");
+        Calculo instance = new Calculo();
+        instance.setNumero1(5);
+        instance.setNumero2(8);
+        
+        String expectedResult="Cálculo correcto";
+        
+        assertEquals(expectedResult,instance.Validacion());
+   
+   }
+   
+   @Test
+   public void testMensajeErrorNum1(){
+   
+       
+        System.out.println("Numeros incorrectamente introduzidos");
+        Calculo instance = new Calculo();
+        instance.setNumero1(-5);
+        instance.setNumero2(8);
+        
+        String expectedResult="Error";
+        
+        assertEquals(expectedResult,instance.Validacion());
+   
+   }
+   
+   @Test
+   public void testMensajeErrorNum2(){
+   
+       
+        System.out.println("Numeros incorrectamente introduzidos");
+        Calculo instance = new Calculo();
+        instance.setNumero1(5);
+        instance.setNumero2(-8);
+        
+        String expectedResult="Error";
+        
+        assertEquals(expectedResult,instance.Validacion());
+   
+   }
+   
 } 
