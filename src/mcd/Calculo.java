@@ -18,6 +18,11 @@ public class Calculo {
     public Calculo() {
     }
 
+    public Calculo(int numero1, int numero2) {
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+ 
     //setters
     public void setNumero1(int numero) {
         this.numero1 = numero;
@@ -73,7 +78,7 @@ public class Calculo {
             mensajeResultado = "Cálculo correcto";
             return numDiv2;
         } catch (Exception e) {
-            mensajeResultado = "Error en cálculo de MCD: " + e.getMessage();
+            mensajeResultado = "Error en cálculo de MCD: ";// + e.getMessage();
             return 0;
         }
 }

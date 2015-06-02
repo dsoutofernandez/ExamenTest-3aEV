@@ -75,7 +75,7 @@ public class CalculoTest {
     /**
      * Test of getMensajeResultado method, of class Calculo.
      */
-    /*@Test
+    @Test
     public void testGetMensajeResultado() {
         System.out.println("Cálculo correcto");
         Calculo instance = new Calculo();
